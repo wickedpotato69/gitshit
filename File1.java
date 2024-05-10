@@ -4,7 +4,7 @@ public class File1 {
 
 	public static void main(String[] args) {
 		Parent p = new Child();
-		System.out.println("=====================");
+		System.out.println("===============");
 		p = new Child();
 	}
 
