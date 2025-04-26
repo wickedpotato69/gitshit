@@ -35,6 +35,9 @@ function App() {
     setNewTodo('');
   };
 
+ //just a random comment for learning git and github actions
+
+
   const toggleTodo = async (id) => {
     const todo = todos.find((t) => t.id === id);
     const response = await fetch(`http://localhost:8080/api/todos/${id}`, {
