@@ -41,4 +41,10 @@ public class TodoController {
     public void deleteTodo(@PathVariable Long id) {
         todos.removeIf(todo -> todo.getId().equals(id));
     }
+
+
+    @GetMapping("/{id}")
+    public Todo getTodoById(@PathVariable Long id) {
+        return todos.stream().filter(todo -> todo.getId().equals(id)).findFirst().orElse(null);
+    }
 }
