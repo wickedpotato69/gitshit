@@ -35,8 +35,10 @@ function App() {
     setNewTodo('');
   };
 
- //just a random comment for learning git and github actions
 
+ // keeping both the changes while solving merge conflicts
+ //just a random comment for learning git and github actions
+ //adding comment for chaos and conflicts
 
   const toggleTodo = async (id) => {
     const todo = todos.find((t) => t.id === id);
