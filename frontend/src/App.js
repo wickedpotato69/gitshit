@@ -35,6 +35,8 @@ function App() {
     setNewTodo('');
   };
 
+  //adding comment for chaos and conflicts
+
   const toggleTodo = async (id) => {
     const todo = todos.find((t) => t.id === id);
     const response = await fetch(`http://localhost:8080/api/todos/${id}`, {
